@@ -1,0 +1,75 @@
+2022-04-09 10:15:50 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_app.admins' doesn't exist in C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 160
+Stack Trace:
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:118
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\ORM\Table.php:513
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\bake\src\Command\ModelCommand.php:111
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\bake\src\Command\ModelCommand.php:94
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\BumbleB\app\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_app.admins' doesn't exist in C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Database\Connection.php:306
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Database\Connection.php:309
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:158
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:118
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\ORM\Table.php:513
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\bake\src\Command\ModelCommand.php:111
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\bake\src\Command\ModelCommand.php:94
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\BaseCommand.php:179
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\xampp\htdocs\BumbleB\app\bin\cake.php:12
+
+
+
+2022-04-09 10:47:58 error: [Error] Object of class Cake\Routing\RouteBuilder could not be converted to string in C:\xampp\htdocs\BumbleB\app\config\routes.php on line 52
+Stack Trace:
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php:950
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php:858
+- C:\xampp\htdocs\BumbleB\app\config\routes.php:54
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:200
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:397
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:147
+- C:\xampp\htdocs\BumbleB\app\bin\cake.php:12
+
+
+
+2022-04-09 10:48:13 error: [Error] Object of class Cake\Routing\RouteBuilder could not be converted to string in C:\xampp\htdocs\BumbleB\app\config\routes.php on line 52
+Stack Trace:
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php:950
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php:858
+- C:\xampp\htdocs\BumbleB\app\config\routes.php:54
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:200
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:397
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:147
+- C:\xampp\htdocs\BumbleB\app\bin\cake.php:12
+
+
+
+2022-04-09 11:56:21 warning: Warning (2): Undefined variable $routes in [C:\xampp\htdocs\BumbleB\app\config\routes.php, line 68]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 185
+Cake\Http\BaseApplication::{closure}() - ROOT\config\routes.php, line 68
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 950
+Cake\Http\BaseApplication::{closure}() - ROOT\config\routes.php, line 83
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 200
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 397
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 147
+[main] - ROOT\bin\cake.php, line 12
+
+2022-04-09 11:56:21 error: [Error] Call to a member function connect() on null in C:\xampp\htdocs\BumbleB\app\config\routes.php on line 68
+Stack Trace:
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php:950
+- C:\xampp\htdocs\BumbleB\app\config\routes.php:83
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Http\BaseApplication.php:200
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:397
+- C:\xampp\htdocs\BumbleB\app\vendor\cakephp\cakephp\src\Console\CommandRunner.php:147
+- C:\xampp\htdocs\BumbleB\app\bin\cake.php:12
+
+
+

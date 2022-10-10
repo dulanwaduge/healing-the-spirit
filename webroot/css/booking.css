@@ -1,0 +1,458 @@
+@font-face {
+    font-family: 'cakefont';
+    src: url('../font/cakedingbats-webfont.eot');
+    src: url('../font/cakedingbats-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/cakedingbats-webfont.woff2') format('woff2'),
+    url('../font/cakedingbats-webfont.woff') format('woff'),
+    url('../font/cakedingbats-webfont.ttf') format('truetype'),
+    url('../font/cakedingbats-webfont.svg#cake_dingbatsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+input,
+button,
+textarea {
+    border: 0;
+    outline: none;
+}
+li {
+    list-style: none;
+}
+/*清除浮动*/
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+body {
+    font-size: 28px;
+    font-family: "times new roman";
+}
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #331832;
+}
+.header .main {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.header .main li {
+    display: inline-block;
+}
+.header .main li a {
+    display: inline-block;
+    margin: 0 40px;
+    color: #fff;
+}
+.index .part1 {
+    background-color: #331832;
+}
+.index .part1 .main {
+    display: flex;
+    height: 660px;
+    padding: 50px 0;
+}
+.index .part1 .main .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-right: 50px;
+}
+.index .part1 .main .right {
+    flex: 1;
+    position: relative;
+}
+.index .part1 .main .right img {
+    width: 100%;
+    position: absolute;
+    bottom: -94px;
+    right: 0;
+}
+.index .part2 {
+    background-color: #fafced;
+    display: flex;
+}
+.index .part2 .left {
+    width: 50%;
+    background-color: #331832;
+    text-align: center;
+    padding: 100px 0;
+    border-top-right-radius: 40%;
+}
+.index .part2 .left img {
+    width: 70%;
+}
+.index .part2 .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    color: #331832;
+}
+.index .part2 .right .title {
+    font-size: 48px;
+}
+.index .part2 .right .desc {
+    margin: 20px 0;
+}
+.index .part2 .right .link a {
+    display: inline-block;
+    padding: 20px;
+    border: 5px solid #331832;
+    color: #331832;
+    border-radius: 50px;
+}
+.index .part3 {
+    background-color: #fafced;
+    display: flex;
+}
+.index .part3 .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #331832;
+    padding: 0 100px;
+}
+.index .part3 .left .title {
+    font-size: 48px;
+}
+.index .part3 .left .desc {
+    margin: 20px 0;
+}
+.index .part3 .left .link a {
+    display: inline-block;
+    padding: 20px;
+    border: 5px solid #331832;
+    color: #331832;
+    border-radius: 50px;
+}
+.index .part3 .right {
+    width: 50%;
+    background-color: #331832;
+    text-align: center;
+    padding: 100px 0;
+    border-bottom-left-radius: 40%;
+}
+.index .part3 .right img {
+    width: 70%;
+}
+.index .part4 {
+    background-color: #8f2c3b;
+    display: flex;
+}
+.index .part4 .left {
+    width: 50%;
+    text-align: center;
+    padding: 100px 0;
+    border-top-right-radius: 40%;
+}
+.index .part4 .left img {
+    width: 70%;
+}
+.index .part4 .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    color: #fff;
+}
+.index .part4 .right .title {
+    font-size: 48px;
+}
+.index .part4 .right .desc {
+    margin: 20px 0;
+}
+.index .part5 {
+    padding: 100px;
+    color: #331832;
+}
+.index .part5 .desc {
+    width: 500px;
+    margin: 40px 0;
+}
+.index .part5 .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.index .part5 .list li {
+    width: 32%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.index .part5 .list li .image {
+    height: 384px;
+    overflow: hidden;
+}
+.index .part5 .list li .image img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.index .part5 .list li .title {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+/*services*/
+.services .part1 {
+    background-color: #fafced;
+    display: flex;
+}
+.services .part1 .left {
+    width: 50%;
+    background-color: #331832;
+    text-align: center;
+    padding: 100px 0;
+    border-top-right-radius: 40%;
+}
+.services .part1 .left img {
+    width: 70%;
+}
+.services .part1 .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    color: #331832;
+}
+.services .part1 .right .title {
+    font-size: 48px;
+}
+.services .part1 .right .desc {
+    margin: 20px 0;
+}
+.services .part1 .right .link a {
+    display: inline-block;
+    padding: 20px;
+    border: 5px solid #331832;
+    color: #331832;
+    border-radius: 50px;
+}
+.services .part2 {
+    padding: 100px;
+    color: #331832;
+}
+.services .part2 .headtitle {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.services .part2 .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services .part2 .list li {
+    width: 32%;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 0 50px;
+}
+.services .part2 .list li .image img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+.services .part2 .list li .title {
+    margin-top: 20px;
+    font-weight: bold;
+    margin: 40px 0;
+    font-size: 42px;
+}
+/*booking*/
+.booking .part1 {
+    background-color: #331832;
+}
+.booking .part1 .main {
+    height: 500px;
+    position: relative;
+}
+.booking .part1 .main .headtitle {
+    font-size: 42px;
+    text-align: center;
+    color: #fff;
+}
+.booking .part1 .main .image {
+    position: absolute;
+    left: 50%;
+    bottom: -50%;
+    transform: translateX(-50%);
+}
+.booking .part2 {
+    background-color: #331832;
+    display: flex;
+}
+.booking .part2 .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    color: #331832;
+    border-top-right-radius: 40%;
+    background-color: #fafced;
+}
+.booking .part2 .left .title {
+    font-size: 48px;
+}
+.booking .part2 .left .desc {
+    margin: 20px 0;
+}
+.booking .part2 .left .link a {
+    display: inline-block;
+    padding: 20px;
+    border: 5px solid #331832;
+    color: #331832;
+    border-radius: 50px;
+}
+.booking .part2 .right {
+    width: 50%;
+    text-align: center;
+    padding: 100px 0;
+}
+.booking .part2 .right img {
+    width: 35%;
+    vertical-align: middle;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+.booking .part3 {
+    background-color: #8f2c3b;
+    padding: 100px 0;
+}
+.booking .part3 h1 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 42px;
+    color: #fff;
+}
+.booking .part3 .main {
+    display: flex;
+    color: #fff;
+}
+.booking .part3 .main input[type=radio] {
+    zoom: 200%;
+}
+.booking .part3 .main .left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.booking .part3 .main .left span {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+.booking .part3 .main .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.booking .part3 .main .right input[type=radio] {
+    margin-right: 10px;
+    margin-left: 40px;
+}
+.booking .part4 {
+    padding: 100px 0;
+}
+.booking .part4 h1 {
+    font-weight: normal;
+    font-size: 42px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.booking .part4 .main {
+    display: flex;
+}
+.booking .part4 .main .left {
+    width: 50%;
+}
+.booking .part4 .main .left .title {
+    font-weight: bold;
+}
+.booking .part4 .main .left .line {
+    margin: 40px 0;
+}
+.booking .part4 .main .left .line span {
+    display: inline-block;
+    width: 150px;
+}
+.booking .part4 .main .left .line input {
+    font-size: 28px;
+    width: 350px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+}
+.booking .part4 .main .right {
+    width: 50%;
+}
+.booking .part4 .main .right > div {
+    margin-bottom: 20px;
+}
+.booking .part4 .main .right .desc {
+    font-weight: bold;
+}
+.booking .part4 .main .right .time input {
+    font-size: 28px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.booking .part4 .main .right .title {
+    margin-top: 50px;
+    font-weight: bold;
+}
+.booking .part4 .main .right .stitle {
+    font-size: 14px;
+    color: #999;
+}
+.booking .part4 .main .right .message textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 28px;
+}
+.booking .part4 .main .right .submit {
+    text-align: right;
+}
+.booking .part4 .main .right .submit a {
+    display: inline-block;
+    padding: 10px 80px;
+    border: 4px solid #331832;
+    color: #331832;
+    border-radius: 40px;
+}
+
+.login {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    margin-left: 30rem;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    position: absolute;
+    width: 100px;
+    display: inline;
+}
